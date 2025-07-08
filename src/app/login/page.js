@@ -1,34 +1,19 @@
 'use client';
 
-import axios from "axios";
-import { useRouter } from "next/navigation";
+import { useAuth } from "@/contexts/AuthContext";
 import { useState } from "react";
 
 export default function Login(){
-    const router = useRouter();
+    const { login } = useAuth();
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const [error, setError] = useState('');
+    // const [error, setError] = useState('');
 
-    const handleLogin = async () => {
-        try{
-            const response = await axios.post('api/login', {
-                email, password
-            });
-
-            if(response.data.success){
-                router.push('/work-orders');
-            }
-            else{
-                setError('Invalid Credetials')
-            }
-
-        }
-        catch(err){
-            setError('Some error occurred');
-        }
+    const handleLogin = async (e) => {
+        e.preventDefault();
+        login(email, password);
     }
     
     return(

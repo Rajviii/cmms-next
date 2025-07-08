@@ -1,8 +1,9 @@
+import { useAuth } from "@/contexts/AuthContext";
 import Link from "next/link"
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export default function Sidebar({ isOpen, toggleSidebar }) {
-    const router = useRouter();
+    const { logout } = useAuth();
     const pathname = usePathname();
     const navItems = [
         { name: 'Dashboard', path: '/dashboard' },
@@ -18,7 +19,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
     ]
 
     const handleLogout = () => {
-        router.push('/login');
+       logout();
     }
 
     return (
