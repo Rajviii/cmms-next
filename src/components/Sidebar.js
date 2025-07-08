@@ -1,4 +1,5 @@
 import { useAuth } from "@/contexts/AuthContext";
+import { Button } from "@progress/kendo-react-buttons";
 import Link from "next/link"
 import { usePathname } from "next/navigation";
 
@@ -16,6 +17,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
         { name: 'Accounting', path: '/accounting' },
         { name: 'Reports', path: '/reports' },
         { name: 'Settings', path: '/settings' },
+        { name: 'Kendo UI', path: '/kendo-ui' },
     ]
 
     const handleLogout = () => {
@@ -47,13 +49,8 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                         </Link>
                     ))}
                 </nav>
-                <div className="absolute bottom-4 w-full px-4">
-                    <button
-                        onClick={handleLogout}
-                        className="w-full text-sm bg-red-400 hover:bg-red-700 transition text-white py-2 rounded"
-                    >
-                        Logout
-                    </button>
+                <div className="absolute bottom-4 w-full px-4 flex items-center justify-center">
+                    <Button onClick={handleLogout} themeColor="primary">Logout</Button>
                 </div>
             </aside>
         </>

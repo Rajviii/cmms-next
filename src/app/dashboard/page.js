@@ -1,5 +1,9 @@
+import { Button } from "@progress/kendo-react-buttons";
+
 export default function Dashboard(){
     return(
-        <>Dashboard</>
+        <>
+            <Button>Kendo UI Button</Button>
+        </>
     )
 }
