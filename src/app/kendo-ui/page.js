@@ -7,6 +7,8 @@ import CustomDropdowns from "@/components/dummy/CustomDropdowns";
 import CustomLabels from "@/components/dummy/CustomLabels";
 import CustomListBox from "@/components/dummy/CustomListBox";
 import CustomNotification from "@/components/dummy/CustomNotification";
+import CustomProgressBar from "@/components/dummy/CustomProgressBar";
+import CustomToolTip from "@/components/dummy/CustomToolTip";
 import InputFields from "@/components/dummy/InputFields";       
 import { Button } from "@progress/kendo-react-buttons";
 import { SvgIcon } from "@progress/kendo-react-common";
@@ -71,8 +73,6 @@ export default function KendoUI() {
                 <Button themeColor="primary" className="mb-4">Kendo UI Button</Button>
                 <SvgIcon icon={paletteIcon} size="xlarge" themeColor="primary" />
             </div>
-
-            <CustomNotification />
             
             {/* Using TailwindCss */}
             {/* <div className="p-4 overflow-x-auto">
@@ -103,14 +103,19 @@ export default function KendoUI() {
             {/* <CustomLabels /> */}
             {/* <CustomBreadcrumb /> */}
             {/* <CardComponent /> */}
+             {/* <CustomNotification /> */}
 
             {/* Partially Paid */}
             {/* <InputFields /> */}
             {/* <CustomDropdowns /> */}
+            {/* <CustomProgressBar /> */}
 
             {/* Paid */}
             {/* <CustomCalendar /> */}
             {/* <CustomDataTools /> */}
+
+            {/* Not Paid but usefull with CSS */}
+            {/* <CustomToolTip /> */}
         </>
     );
 }

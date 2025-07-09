@@ -23,6 +23,8 @@
     "@progress/kendo-react-layout": "^11.2.0",
     "@progress/kendo-react-listbox": "^11.2.0",
     "@progress/kendo-react-notification": "^11.2.0",
+    "@progress/kendo-react-progressbars": "^11.2.0",
+    "@progress/kendo-react-tooltip": "^11.2.0",
     "@progress/kendo-theme-default": "^11.1.0",
     "axios": "^1.10.0",
     "next": "15.3.5",
