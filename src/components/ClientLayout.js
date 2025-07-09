@@ -19,11 +19,19 @@ export default function ClientLayout({ children }) {
   }
 
   return (
+    // <>
+    //   <header className="bg-blue-500 text-white sticky top-0 z-10">
+    //     <section className="mx-auto p-4 flex justify-between">
+    //         {/* <h1 className="text-3xl font-medium">CMMS FacilIt</h1> */}
+    //         <button className="text-3xl sm:hidden focus:outline-none">&#9776;</button>
+    //     </section>
+    //   </header>
+    // </>
     <div className="flex min-h-screen">
       <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
 
       <div className="flex-1 flex flex-col w-full">
-        <header className="sticky top-0 z-30 bg-white shadow px-4 py-3 flex items-center justify-between md:justify-end">
+        <header className="sticky top-0 z-30 bg-white shadow px-4 py-3 flex items-center justify-between md:justifydd-end">
           <button
             onClick={toggleSidebar}
             className="text-blue-700 text-2xl md:hidden"

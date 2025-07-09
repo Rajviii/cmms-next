@@ -98,17 +98,17 @@ export default function KendoUI() {
             </div> */}
 
             {/* Not Paid */}
-            <CustomDialog />
+            {/* <CustomDialog />
             <CustomListBox />
             <CustomLabels />
             <CustomBreadcrumb />
             <CardComponent />
-            <CustomNotification />
+            <CustomNotification /> */}
 
             {/* Partially Paid */}
-            <InputFields />
+            {/* <InputFields />
             <CustomDropdowns />
-            <CustomProgressBar />
+            <CustomProgressBar /> */}
 
             {/* Paid */}
             {/* <CustomCalendar /> */}

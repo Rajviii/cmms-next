@@ -33,7 +33,7 @@ export default function WorkOrderLayout({ children }) {
         ))}
       </div>
 
-      <FilterBar />
+      {/* <FilterBar /> */}
       <div className="bg-white rounded shadow p-4 mt-4">
         {children}
       </div>

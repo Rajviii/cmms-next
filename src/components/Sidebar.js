@@ -31,19 +31,19 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                 ${isOpen ? 'block' : 'hidden'}`}
                 onClick={toggleSidebar} />
 
-            <aside className={`fixed top-0 left-0 h-screen w-64 bg-blue-900 text-white z-50 transform transition-transform 
+            <aside className={`fixed top-0 left-0 h-screen w-64 bg-white-900 text-grey z-50 transform transition-transform 
                 ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 md:static md:block`}>
-                <div className="text-2xl font-bold px-6 py-4 border-b border-blue-700">
+                {/* <div className="text-2xl font-bold px-6 py-4 border-b border-blue-700">
                     CMMS
-                </div>
+                </div> */}
 
                 <nav className="mt-4 space-y-2 px-4">
                     {navItems.map((item) => (
                         <Link
                             key={item.path}
                             href={item.path}
-                            className={`block px-4 py-2 rounded text-sm hover:bg-blue-700 transition 
-                                ${pathname === item.path ? 'bg-blue-700' : ''}`}
+                            className={`block px-4 py-2 rounded text-sm hover:bg-grey-700 transition 
+                                ${pathname === item.path ? 'bg-grey-700' : ''}`}
                             onClick={toggleSidebar}
                         >
                             {item.name}
