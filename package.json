@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "@progress/kendo-react-animation": "^11.2.0",
     "@progress/kendo-react-buttons": "^11.2.0",
     "@progress/kendo-react-common": "^11.2.0",
@@ -27,7 +28,9 @@
     "@progress/kendo-react-tooltip": "^11.2.0",
     "@progress/kendo-theme-default": "^11.1.0",
     "axios": "^1.10.0",
+    "install": "^0.13.0",
     "next": "15.3.5",
+    "npm": "^11.4.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0"

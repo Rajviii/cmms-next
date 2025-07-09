@@ -18,6 +18,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
         { name: 'Reports', path: '/reports' },
         { name: 'Settings', path: '/settings' },
         { name: 'Kendo UI', path: '/kendo-ui' },
+        { name: 'Tailwind UI', path: '/tailwind-ui' }
     ]
 
     const handleLogout = () => {
