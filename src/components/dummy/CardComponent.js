@@ -18,8 +18,8 @@ const CardComponent = props => {
           </CardTitle>
         </CardHeader>
         <CardBody>
-          <p>Barcelona, the cosmopolitan capital of Spain's Catalonia region, is known for its art and architecture.</p>
-          <p>The fantastical Sagrada FamÃ­lia church and other modernist landmarks designed by Antoni GaudÃ­ dot the city.</p>
+          <p>Barcelona, the cosmopolitan capital of Spain is Catalonia region, is known for its art and architecture.</p>
+          <p>The fantastical Sagrada FamAia church and other modernist landmarks designed by Antoni GaudA dot the city.</p>
         </CardBody>
         <CardActions>
         <Button fillMode='flat' themeColor={'primary'} type="button"> Map </Button>
